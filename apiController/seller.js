@@ -96,14 +96,13 @@ class SellerController {
         products.push({
           id: product.STOCK_ID,
           stock: product.STOCK,
-          category: product.CATEGORY, 
+          category: product.CATEGORY,
           name: product.NAME,
           price: product.PRICE,
           image_url: product.IMAGE_URL,
           description: product.DESCRIPTION,
           offer: product.OFFER,
           rating: product.RATING,
-
         });
       });
       console.log(`products of seller ${req.params.id} fetched`);
